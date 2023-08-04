@@ -1,6 +1,5 @@
 .productCard {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 20px;
   border: 1px solid grey;
@@ -13,10 +12,17 @@
     height: 15px;
     background-color: rgb(0, 181, 0);
     border-radius: 10px;
+    margin-right: 10px;
+  }
+
+  &__imageproduct {
+    width: 50px;
+    margin-right: 30px;
   }
 
   &__productInfo {
     width: 200px;
+    margin-right: 30px;
   }
 
   &__productName {
@@ -26,5 +32,10 @@
 
   &__serialNumber {
     color: grey;
+  }
+
+  &__margin {
+    width: 200px;
+    margin-right: 70px;
   }
 }

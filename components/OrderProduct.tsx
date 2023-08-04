@@ -57,18 +57,6 @@ const OrderProduct: FC<Props> = ({ product,currentOrder }) => {
       <div className="orderProduct__status">
         Free
       </div>
-
-      <div>
-        <button className="orderProduct__buttonDelete">
-          <Image
-                src={GarbgeIcon}
-                alt='icon delete item from list'
-                width={25}
-                height={25}
-                onClick={() => handleDeleteProduct(id , currentOrder.id)}
-              />
-        </button>
-      </div>
     </div>
   )
 }

@@ -23,14 +23,17 @@ const ProductCard: FC<Props> = ({ product }) => {
   return (
     <div className='productCard'>
       <div className="productCard__green_circle" />
-      <Image
-        src={`${BASE_URL}${photo}`}
-        alt='product image'
-        width={50}
-        objectFit='contain'
-        height={50}
-        className='p-1'
-      />
+      <div className="productCard__imageproduct">
+        <Image
+          src={`${BASE_URL}${photo}`}
+          alt='product image'
+          width={50}
+          objectFit='contain'
+          height={50}
+          className='p-1'
+        />
+      </div>
+
       <div className="productCard__productInfo">
         <div className="productCard__productName">
           {title}
@@ -39,10 +42,10 @@ const ProductCard: FC<Props> = ({ product }) => {
           {serialNumber}
         </div>
       </div>
-      <div>
+      <div className='productCard__margin'>
         <Card.Text>Type: {type}</Card.Text>
       </div>
-      <div>
+      <div className='productCard__margin'>
         <Card.Text>From: {guarantee.start}</Card.Text>
         <Card.Text>To: {guarantee.end}</Card.Text>
       </div>

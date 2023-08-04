@@ -49,15 +49,6 @@ const OrderItems: FC<Props> = ({
       <div className="orderItems__insideContainer">
         <p>Order {id}</p>
 
-        <div>
-        <button className="orderItems__buttonAdd">
-          +
-        </button>
-        <span className="orderItems__textAdd" > 
-          Add Product
-        </span>
-        </div>
-
         <ul className="orderItems__productList">
           {filteredProduct.map((product) => (
             <li 
