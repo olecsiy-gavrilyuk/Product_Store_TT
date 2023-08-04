@@ -2,7 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  domains: ['server-g0z5.onrender.com'],
+  images: {
+    domains: ['server-g0z5.onrender.com'],
+  },
 }
 
 module.exports = nextConfig
