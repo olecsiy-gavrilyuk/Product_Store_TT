@@ -1,34 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Product Store TT
 
-## Getting Started
+Product Store TT - це додаток для управління товарами та замовленнями. Додаток дозволяє додавати, переглядати, редагувати та видаляти товари, а також створювати та переглядати замовлення.
 
-First, run the development server:
+### Технології
 
-```bash
-npm run dev
-# or
-yarn dev
+Додаток розроблено з використанням наступних технологій:
+
+- **Next.js**: Next.js використовується як фреймворк для розробки реактивних веб-додатків з підтримкою серверного рендерингу та статичного сайту.
+
+- **React**: React - це JavaScript бібліотека для побудови інтерфейсів користувача.
+
+- **Redux Toolkit**: Redux Toolkit використовується для управління станом додатку та зберігання даних.
+
+- **React-Bootstrap**: React-Bootstrap використовується для стилізації компонентів та створення респонсивного дизайну.
+
+### Локальний запуск
+
+Щоб запустити проект локально, виконайте наступні кроки:
+
+1. Клонуйте репозиторій на свій комп'ютер:
+
+```
+git clone https://github.com/olecsiy-gavrilyuk/Product_Store_TT.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Перейдіть у папку проекту:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+cd Product_Store_TT
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Встановіть залежності:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+npm install
+```
 
-## Learn More
+4. Запустіть проект:
 
-To learn more about Next.js, take a look at the following resources:
+```
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Проект буде запущено на `http://localhost:3000`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Збірка проекту
 
-## Deploy on Vercel
+Щоб збілдити проект для розгортання на сервері, виконайте команду:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Це створить папку `out`, в якій знаходитимуться готові файли для деплою.
+
+### Висновок
+
+Product Store TT - це потужний додаток для управління товарами та замовленнями. Завдяки використанню Next.js, React, Redux Toolkit та React-Bootstrap, додаток має ефективний та респонсивний дизайн, який забезпечує зручне користування.
