@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classNames from 'classnames';
 
-const BASE_URL = 'server-g0z5.onrender.com/'
+const BASE_URL = 'https://server-g0z5.onrender.com/'
 
 
 const navigation = [

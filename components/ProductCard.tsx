@@ -3,7 +3,7 @@ import { Card, Container, Row } from 'react-bootstrap';
 import { Product } from '../types/Product';
 import Image from 'next/legacy/image'
 
-const BASE_URL = 'server-g0z5.onrender.com/';
+const BASE_URL = 'https://server-g0z5.onrender.com/';
 
 
 type Props = {

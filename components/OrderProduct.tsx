@@ -12,7 +12,7 @@ type Props = {
   currentOrder: Order;
 }
 
-const BASE_URL = 'server-g0z5.onrender.com/';
+const BASE_URL = 'https://server-g0z5.onrender.com/';
 
 const OrderProduct: FC<Props> = ({ product,currentOrder }) => {
   const {
@@ -28,7 +28,7 @@ const OrderProduct: FC<Props> = ({ product,currentOrder }) => {
   const handleDeleteProduct = (productId: number, orderId: number) => {
     setTimeout(() => {
       dispatch(deleteProductFromOrder({ orderId, productId }));
-      console.log(orders)
+
     }, 0);
 
   };
