@@ -1,0 +1,27 @@
+.products {
+  padding: 50px;
+  background-color: rgb(246, 246, 246);
+
+  &__heading {
+    display: flex;
+    width: 600px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__countProducts {
+    flex-grow: 1;
+  }
+
+  &__select {
+    display: inline-block; 
+    margin-left: 20px;
+    width: 250px;
+  }
+
+  &__list {
+    overflow: auto;
+    height: 463px;
+  }
+}
