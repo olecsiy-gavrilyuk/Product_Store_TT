@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-
+  domains: ['server-g0z5.onrender.com/'],
   basePath: '/github-pages',
 }
 

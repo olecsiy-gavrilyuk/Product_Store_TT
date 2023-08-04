@@ -3,6 +3,8 @@ import { Card, Container, Row } from 'react-bootstrap';
 import { Product } from '../types/Product';
 import Image from 'next/legacy/image'
 
+const BASE_URL = 'server-g0z5.onrender.com/';
+
 
 type Props = {
   product: Product;
@@ -22,7 +24,7 @@ const ProductCard: FC<Props> = ({ product }) => {
     <div className='productCard'>
       <div className="productCard__green_circle" />
       <Image
-        src={`${photo}`}
+        src={`${BASE_URL}${photo}`}
         alt='product image'
         width={50}
         objectFit='contain'

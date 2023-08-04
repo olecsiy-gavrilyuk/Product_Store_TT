@@ -12,6 +12,8 @@ type Props = {
   currentOrder: Order;
 }
 
+const BASE_URL = 'server-g0z5.onrender.com/';
+
 const OrderProduct: FC<Props> = ({ product,currentOrder }) => {
   const {
     id,
@@ -37,7 +39,7 @@ const OrderProduct: FC<Props> = ({ product,currentOrder }) => {
 
       <div className="orderProduct__product_image">
         <Image
-          src={`/${photo}`}
+          src={`${BASE_URL}${photo}`}
           alt='product image'
           objectFit="contain"
           width={40}

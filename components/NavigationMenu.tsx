@@ -2,8 +2,9 @@ import { useRouter } from 'next/router';
 import { Nav, Navbar } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../public/logo.jpg';
 import classNames from 'classnames';
+
+const BASE_URL = 'server-g0z5.onrender.com/'
 
 
 const navigation = [
@@ -22,7 +23,7 @@ const NavigationMenu = () => {
       style={{ height: '86vh' }}
     >
         <Image
-          src={logo}
+          src={`${BASE_URL}/logo.jpg`}
           alt="Logo"
           width="50"
           height="50"
