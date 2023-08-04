@@ -22,7 +22,7 @@ const ProductCard: FC<Props> = ({ product }) => {
     <div className='productCard'>
       <div className="productCard__green_circle" />
       <Image
-        src={`/${photo}`}
+        src={`${photo}`}
         alt='product image'
         width={50}
         objectFit='contain'
