@@ -1,3 +1,5 @@
+@import './variables';
+
 .productCard {
   display: flex;
   align-items: center;
@@ -6,6 +8,7 @@
   background-color: white;
   border-radius: 10px;
   margin: 10px 0px;
+  height: $height-card;
 
   &__green_circle {
     width: 15px;

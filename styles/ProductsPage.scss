@@ -1,3 +1,5 @@
+@import './variables';
+
 .products {
   padding: 50px;
   background-color: rgb(246, 246, 246);
@@ -22,6 +24,6 @@
 
   &__list {
     overflow: auto;
-    height: 463px;
+    height: $height-card * 4 + 46;
   }
 }
