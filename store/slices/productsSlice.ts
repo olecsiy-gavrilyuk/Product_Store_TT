@@ -25,7 +25,7 @@ const initialState = [
     id: 2,
     serialNumber: 5678,
     isNew: 1,
-    photo: '../public/hp.jpg',
+    photo: '../public/hp.JPG',
     title: 'HP EliteBook x360 1040 G8',
     type: 'Laptops',
     specification: '14" 2-in-1 Laptop, Intel Core i7, 16GB RAM, 512GB SSD, Windows 10 Pro',
