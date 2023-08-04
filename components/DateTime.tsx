@@ -14,29 +14,30 @@ const DateTime = () => {
   }, []);
 
   const formatDay = (date: Date) => {
-    const options = { weekday: 'long' }as Intl.DateTimeFormatOptions;;
+    const options = { weekday: 'long' } as Intl.DateTimeFormatOptions;;
     return date.toLocaleDateString('en-US', options);
   };
 
   const formatDate = (date: Date) => {
-    const options = { day: 'numeric', month: 'long', year: 'numeric' }as Intl.DateTimeFormatOptions;;
+    const options = { day: 'numeric', month: 'long', year: 'numeric' } as Intl.DateTimeFormatOptions;;
     return date.toLocaleDateString('en-US', options);
   };
 
   const formatTime = (date: Date) => {
-    const options = { hour: 'numeric', minute: 'numeric'}as Intl.DateTimeFormatOptions;;
+    const options = { hour: 'numeric', minute: 'numeric' } as Intl.DateTimeFormatOptions;;
     return date.toLocaleTimeString('en-US', options);
   };
 
   return (
     <div>
       <div>
-      {formatDay(currentDateTime)}
+        {formatDay(currentDateTime)} 
+        <span className='p-2'>
+          {formatTime(currentDateTime)}
+        </span>
       </div>
       <div>
-      {formatDate(currentDateTime)}
-      <span>|</span>
-      {formatTime(currentDateTime)}
+        {formatDate(currentDateTime)}
       </div>
     </div>
   );

@@ -14,6 +14,8 @@
 
 
   &__button {
+    display: grid;
+    place-items: center;
     width: 35px;
     height: 35px;
     border-radius: 30px;
@@ -24,6 +26,7 @@
     font: inherit;
     cursor: pointer;
     outline: inherit;
+    transition: 0.4s;
   }
 
   &__button:hover {

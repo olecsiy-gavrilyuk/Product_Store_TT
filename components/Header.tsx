@@ -1,6 +1,4 @@
 import { Col, Form, FormControl, Button, Container, Row } from 'react-bootstrap';
-import Image from 'next/image';
-import logo from '../public/vercel.svg';
 import SvgLogo from './SvgLogo';
 import DateTime from './DateTime';
 

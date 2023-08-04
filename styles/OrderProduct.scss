@@ -33,8 +33,9 @@
   }
 
   &__buttonDelete {
+    display: grid;
+    place-items: center;
     width: 40px;
-    align-items: center;
     height: 40px;
     border-radius: 30px;
     background-color: rgb(255, 255, 255);
